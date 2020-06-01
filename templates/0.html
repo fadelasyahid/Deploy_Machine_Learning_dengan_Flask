@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Klasifikasi Penyakit Kanker Payudara</title>
+</head>
+<style>
+    h1{
+        color: black;
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+    
+</style>
+<body style="background-image: url('https://www.managedhealthcareexecutive.com/sites/default/files/CancerRibbons_225317395_3.png');
+background-repeat: no-repeat;
+background-size: 100% 155%;">
+<center>
+    <h1>
+        Predict Your Breast Cancer Type
+   </h1>
+    <form action="http://localhost:1234/result"
+    method="POST">
+        <p>Radius Mean <input name="Radius Mean" type="float" 
+            placeholder="Radius Mean"/></p>
+        <p>Texture Mean <input name="Texture Mean" type="float" 
+            placeholder="Texture Mean"/></p>
+        <p>Perimeter Mean <input name="Perimeter Mean" type="float" 
+            placeholder="Perimeter Mean"/></p>
+        <p>Area Mean <input name="Area Mean" type="float" 
+            placeholder="Area Mean"/></p>
+        <p>Smoothness Mean <input name="Smoothness Mean" type="float" 
+            placeholder="Smoothness Mean"/></p>
+        <p>Compactness Mean <input name="Compactness Mean" type="float" 
+            placeholder="Compactness Mean"/></p>
+        <p>Concavity Mean <input name="Concavity Mean" type="float" 
+            placeholder="Concavity Mean"/></p>
+        <p>Concave Mean <input name="Concave Points Mean" type="float" 
+            placeholder="Concave Points Mean"/></p>
+        <p>Symmetry Mean <input name="Symmetry Mean" type="float" 
+            placeholder="Symmetry Mean"/></p>
+        <p><input type="submit" value="Predict"></p>
+    </form>
+</center>
+</body>
+</html>
